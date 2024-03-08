@@ -28,7 +28,7 @@ class BackGroundCard extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CustomButtonWidget(
+                const CustomButtonWidget(
                   title: "My List",
                   icon: Icons.add,
                 ),
@@ -36,7 +36,7 @@ class BackGroundCard extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child:  _PlayButton(),
                 ),
-                CustomButtonWidget(icon: Icons.info, title: 'Info')
+                const CustomButtonWidget(icon: Icons.info, title: 'Info')
 
               ],
             ),
@@ -45,12 +45,13 @@ class BackGroundCard extends StatelessWidget {
       ],
     );
   }
+  // ignore: non_constant_identifier_names
   TextButton _PlayButton() {
     return TextButton.icon(onPressed: (){},
-        style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(kWhiteColor)),
+        style: ButtonStyle(backgroundColor: const MaterialStatePropertyAll(kWhiteColor)),
         icon:const Icon(Icons.play_arrow,size: 30,color: kButtonColorBlack,),
-        label: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+        label: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10),
           child: Text("Play",style: TextStyle(fontSize: 25,color: kButtonColorBlack),),
         ));
   }

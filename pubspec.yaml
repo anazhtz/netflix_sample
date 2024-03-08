@@ -39,11 +39,11 @@ dependencies:
   video_player: ^2.8.2
   bordered_text: ^2.0.0
   stroke_text: ^0.0.2
-  build_runner:
-  freezed:
+  build_runner: ^2.4.8
+  freezed: ^2.4.7
   flutter_bloc: ^8.1.4
-  json_serializable:
-  json_annotation:
+  json_serializable: ^6.7.1
+  json_annotation: ^4.8.1
 
 
 dev_dependencies:
